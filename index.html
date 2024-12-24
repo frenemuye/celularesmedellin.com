@@ -202,7 +202,7 @@
     <script>
         // Listado recibido por WhatsApp
         const listadoWhatsApp = `
-             🔵 ZTE 🔵
+   🔵 ZTE 🔵
 
 
 🇨🇴 ZTE L220 32GB $175.000 Azúl y Negro
@@ -226,7 +226,9 @@
 🇨🇴 Redmi 13 128GB/6Ram 4G $495.000 Negro dorado y azúl
 🇨🇴 Redmi Note 13 128GB/6Ram 4G $520.000 Negro
 🇨🇴 Xiaomi Robot aspirador E5 $420.000
+
 🇨🇴 Redmi Pad se 128GB/4Ram 11" wi-fi $550.000 gris y verde 
+
 🇨🇴 Redmi Pad se 256GB/8Ram 11" wi-fi $650.000 púrpura y verde 
 
        
@@ -287,20 +289,24 @@
 
 🇨🇴 Skycell 106 4G $65.000  Negro y gris
 🇨🇴 Skycell Keystone 4G $65.000 Azúl y Negro
-🇨🇴 Skycell CAT B25 5G $125.000 Negro (replica de Caterpillar)
-        `;
+🇨🇴 Skycell CAT B25 5G
+$125.000 Negro (replica de Caterpillar)
 
-        // Función para procesar el listado
+                            `;
+
+
+
         function procesarListado(listado) {
             const celulares = [];
             const lineas = listado.trim().split('\n');
 
             for (const linea of lineas) {
-                const match = linea.match(/(.+?)\s\$(\d+\.\d+)/);
+                // Ajustar la expresión regular para manejar correctamente los precios con puntos
+                const match = linea.match(/(.+?)\s\$(\d[\d\.]+)/);
                 if (match) {
                     const modelo = match[1].trim();
-                    const precio = parseFloat(match[2].replace('.', ''));
-                    const precioConAumento = Math.round(precio * 1.15);
+                    const precio = parseInt(match[2].replace(/\./g, ''), 10); // Eliminar puntos y convertir a número
+                    const precioConAumento = Math.round(precio * 1.15); // Aplicar 15% de aumento
                     celulares.push({ modelo, precio: precioConAumento });
                 }
             }
@@ -308,14 +314,19 @@
             return celulares;
         }
 
-        // Función para mostrar los celulares en la página
         function mostrarCelulares(celulares) {
             const lista = document.querySelector('#lista-precios');
             lista.innerHTML = ''; // Limpiar contenido anterior
 
             celulares.forEach(celular => {
                 const item = document.createElement('li');
-                item.textContent = `${celular.modelo}: $${celular.precio.toLocaleString('es-CO')}`;
+                const precioFormateado = new Intl.NumberFormat('es-CO', {
+                    style: 'currency',
+                    currency: 'COP',
+                    minimumFractionDigits: 0, // Sin decimales para COP
+                }).format(celular.precio);
+
+                item.textContent = `${celular.modelo}: ${precioFormateado}`;
                 lista.appendChild(item);
             });
         }
@@ -323,6 +334,8 @@
         // Procesar y mostrar el listado
         const celularesProcesados = procesarListado(listadoWhatsApp);
         mostrarCelulares(celularesProcesados);
+
+
     </script>
 </body>
 
