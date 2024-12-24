@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Celulares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        a{
+            color: white;
+        }
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .producto {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+        }
+        .producto img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .whatsapp-button img {
+            width: 30px;
+            height: 30px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .direccion {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        .lista-precios {
+            padding: 20px;
+            text-align: center;
+        }
+        .lista-precios ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .lista-precios li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venta de Celulares</h1>
+    </header>
+
+    <main>
+        <div class="productos">
+            <div class="producto">
+                <img src="assets/img/iphone.jpg" alt="Apple">
+                <h2>Apple iPhone</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/sam.jpg" alt="Samsung">
+                <h2>Samsung G.</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="assets/img/Huawei.jpg" alt="Huawei">
+                <h2>Huawei</h2>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="lista-precios">
+            <h2>Listado de Precios</h2>
+            <ul>
+                <li>Apple iPhone: $3,000,000</li>
+                <li>Samsung Galaxy: $2,500,000</li>
+                <li>Huawei: $1,800,000</li>
+            </ul>
+        </div>
+    </main>
+
+    <button class="whatsapp-button" onclick="window.open('https://wa.me/3145315771?text=Quiero%20comprar%20un%20celular%20de%20la%20lista', '_blank')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </button>
+
+    <footer>
+        <p>Apartamentos amoblados en Medellín <a href="https://suamoblado.com" target="_blank">SuAmoblado.com</a></p>
+        <p class="direccion">Cra 37 #56-24, Boston, Medellín</p>
+    </footer>
+</body>
+</html>
