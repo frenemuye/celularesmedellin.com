@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Venta de celulares en Medellín y toda Colombia. Encuentra las mejores marcas como ZTE, Apple, Samsung y Huawei con precios increíbles y envío a todo el país.">
+    <meta name="keywords"
+        content="venta de celulares, celulares Medellín, celulares Colombia, ZTE, Apple, Samsung, Huawei">
+    <meta name="author" content="Venta de Celulares">
+    <title>Venta de Celulares en Medellín y Colombia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .producto {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            background-color: white;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .producto:hover {
+            transform: translateY(-10px);
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .producto button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .producto button:hover {
+            background-color: #45a049;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .lista-precios {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .lista-precios h2 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .lista-precios ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .lista-precios li {
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Venta de Celulares en Medellín y Colombia</h1>
+    </header>
+
+    <main>
+        <div class="productos">
+            <div class="producto">
+                <img src="./assets/img/iphone.jpg" alt="Apple">
+                <h2>Apple iPhone</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="./assets/img/sam.jpg" alt="Samsung">
+                <h2>Samsung Galaxy</h2>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="./assets/img/Huawei.jpg" alt="Huawei">
+                <h2>Huawei</h2>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="lista-precios">
+            <h2>Listado de Precios</h2>
+            <ul id="lista-precios">
+<<<<<<< HEAD
+                <!-- <li>Apple iPhone: $3,000,000</li>
+                <li>Samsung Galaxy: $2,500,000</li>
+                <li>Huawei: $1,800,000</li> -->
+=======
+                <li>Apple iPhone: $3,000,000</li>
+                <li>Samsung Galaxy: $2,500,000</li>
+                <li>Huawei: $1,800,000</li>
+>>>>>>> 27c30b1c844da1daa5150845cacd4afad9b07dcd
+            </ul>
+        </div>
+    </main>
+
+    <button class="whatsapp-button"
+        onclick="window.open('https://wa.me/3145315771?text=Quiero%20comprar%20un%20celular%20de%20la%20lista', '_blank')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </button>
+
+    <footer>
+<<<<<<< HEAD
+        <p>Patrocidado por <a href="https://suamoblado.com" target="_blank">SuAmoblado.com</a></p>
+        <p class="direccion">Cra 37 #56-24, Boston, Medellín - Nelson Muñoz</p>
+    </footer>
+
+
+
+    <!-- llena los valores de los precios en el archivo precios.txt local -->
+    <!-- <script>
+        async function cargarPreciosDesdeTXT() {
+            try {
+                // Leer el archivo precios.txt
+                const response = await fetch('./precios.txt');
+                const texto = await response.text();
+
+                // Procesar el contenido del archivo
+                const lineas = texto.split('\n');
+                const celulares = [];
+
+                lineas.forEach(linea => {
+                    const match = linea.match(/🇨🇴\s(.+?)\s\$(\d[\d\.]+)/); // Buscar modelo y precio
+                    if (match) {
+                        const modelo = match[1].trim();
+                        const precio = parseInt(match[2].replace(/\./g, ''), 10); // Convertir a número
+                        const precioConAumento = Math.round(precio * 1.15); // Aplica 15% de aumento
+                        celulares.push({ modelo, precio: precioConAumento });
+                    }
+                });
+
+                // Mostrar los celulares en la lista
+                const lista = document.querySelector('#lista-precios');
+                lista.innerHTML = ''; // Limpiar contenido anterior
+
+                celulares.forEach(celular => {
+                    const li = document.createElement('li');
+                    const precioFormateado = new Intl.NumberFormat('es-CO', {
+                        style: 'currency',
+                        currency: 'COP',
+                        minimumFractionDigits: 0 // Sin decimales
+                    }).format(celular.precio);
+
+                    li.textContent = `${celular.modelo}: ${precioFormateado}`;
+                    lista.appendChild(li);
+                });
+            } catch (error) {
+                console.error('Error al cargar los precios:', error);
+            }
+        }
+
+        // Llamar a la función para cargar los precios al iniciar
+        cargarPreciosDesdeTXT();
+    </script> -->
+
+
+    <script>
+        async function cargarPreciosDesdeOneDrive() {
+            try {
+                // Enlace directo al archivo en OneDrive
+                const url = 'precios.txt'; // Reemplaza FILE_ID con tu ID único
+                const response = await fetch(url);
+                const texto = await response.text();
+    
+                // Procesar el contenido del archivo
+                const lineas = texto.split('\n');
+                const celulares = [];
+    
+                lineas.forEach(linea => {
+                    const match = linea.match(/🇨🇴\s(.+?)\s\$(\d[\d\.]+)/); // Buscar modelo y precio
+                    if (match) {
+                        const modelo = match[1].trim();
+                        const precio = parseInt(match[2].replace(/\./g, ''), 10); // Convertir a número
+                        const precioConAumento = Math.round(precio * 1.15); // Aplica 15% de aumento
+                        celulares.push({ modelo, precio: precioConAumento });
+                    }
+                });
+    
+                // Mostrar los celulares en la lista
+                const lista = document.querySelector('#lista-precios');
+                lista.innerHTML = ''; // Limpiar contenido anterior
+    
+                celulares.forEach(celular => {
+                    const li = document.createElement('li');
+                    const precioFormateado = new Intl.NumberFormat('es-CO', {
+                        style: 'currency',
+                        currency: 'COP',
+                        minimumFractionDigits: 0 // Sin decimales
+                    }).format(celular.precio);
+    
+                    li.textContent = `${celular.modelo}: ${precioFormateado}`;
+                    lista.appendChild(li);
+                });
+            } catch (error) {
+                console.error('Error al cargar los precios desde OneDrive:', error);
+                alert('Error al cargar los precios desde OneDrive');
+            }
+        }
+    
+        // Llamar a la función al cargar la página
+        cargarPreciosDesdeOneDrive();
+    </script>
+    
+
+
+=======
+        <p>Recomiendo visitar <a href="https://suamoblado.com" target="_blank">SuAmoblado.com</a></p>
+        <p class="direccion">Cra 37 #56-24, Boston, Medellín</p>
+    </footer>
+
+    <script>
+        // Listado recibido por WhatsApp
+        const listadoWhatsApp = `
+   🔵 ZTE 🔵
+
+
+🇨🇴 ZTE L220 32GB $175.000 Azúl y Negro
+🇨🇴 ZTE A34 64GB $230.000 Gris y verde
+🇨🇴 ZTE A54 128GB $275.000 Gris azúl y morado
+🇨🇴 ZTE Nubia Music 128GB/4Ram $350.000 arte pop
+🇨🇴 ZTE V60 Smart 256GB/4Ram+10 $375.000 Verde Negro y blanco
+🇨🇴 ZTE V60 256GB/6Ram+10 $475.000 Negro y Dorado
+🇨🇴 ZTE Nubia Neo 2 5G 256GB/8Ram $780.000 plateado amarillo y Negro + kit Gamers
+🇨🇴 ZTE Nubia Focus Pro 5G 256GB $830.000 Beige  cámara profesional
+
+  
+        🟠 XIAOMI 🟠
+
+
+🇨🇴 Redmi 14C 128GB $395.000 Negro 1 Sim
+🇨🇴 Redmi 14C 256GB/4Ram $450.000 Negro 1 Sim
+🇨🇴 Redmi 14C 256GB/4Ram $465.000 Negro 2 Sim
+🇨🇴 Redmi 14C 256GB/8Ram $510.000 verde negro y azúl
+🇨🇴 Redmi 14C 256GB/8Ram payjoy $510.000 Negro
+🇨🇴 Redmi 13 128GB/6Ram 4G $495.000 Negro dorado y azúl
+🇨🇴 Redmi Note 13 128GB/6Ram 4G $520.000 Negro
+🇨🇴 Xiaomi Robot aspirador E5 $420.000
+
+🇨🇴 Redmi Pad se 128GB/4Ram 11" wi-fi $550.000 gris y verde 
+
+🇨🇴 Redmi Pad se 256GB/8Ram 11" wi-fi $650.000 púrpura y verde 
+
+       
+        🟢 INFINIX 🟢
+
+
+🇨🇴 Smart 9 HD 64GB $315.000 Negro gris y verde
+🇨🇴 Smart 9 HD 128GB $350.000 Negro gris y verde
+🇨🇴 Hot 50i 256GB/4Ram $420.000 Negro gris y verde
+🇨🇴 Hot 50 5G 256GB/8Ram $595.000 Negro verde y azúl
+🇨🇴 Hot 50 Pro plus 4G $715.000 Negro y Gris
+    
+
+          ⚪ HONOR ⚪
+
+
+🇨🇴 Honor Play 9A128GB/4Ram $320.000 azúl
+🇨🇴 Honor Play 9A 256GB/4Ram $395.000 azúl
+
+
+        ⚪ SAMSUNG ⚫                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+ 
+🇨🇴 Samsung A05 64GB $305.000 Negro 1sim
+🇨🇴 Samsung A05 64GB $312.000 Negro y verde Dual Sim
+🇨🇴 Samsung A05S 128GB/6Ram 410.000 Gris Lila y Negro
+🇨🇴 Samsung A06 128GB/4Ram $380.000 Negro verde y Silver
+🇨🇴 Samsung A15 256GB/8Ram 4G $540.000 Azúl claro, azúl oscuro y amarillo
+🇨🇴 Samsung A15 256GB/8Ram 5G $550.000 Azúl claro 1sim
+🇨🇴 Samsun A25 256GB/8Ram 5G $730.000 Negro y amarillo
+🇨🇴 Samsun A35 256GB/8Ram 5G $880.000 Azúl claro, Azúl oscuro  1sim
+🇨🇴 Samsung A35 256GB/8Ram 5G $885.000 azúl claro 2Sim
+    
+
+         🍎🍎🍎🍎🍎 
+       IPHONE NUEVO
+
+
+🇨🇴 IPHONE 13 128GB $2.400.000 
+🇨🇴 IPHONE 14 128GB 2.680.000 (SIM FÍSICA)
+🇨🇴 IPHONE 15 128GB $3.100.000 (SIM FÍSICA)
+🇨🇴 IPHONE 16 128GB $3.830.000 (SIM FÍSICA)
+🇨🇴 IPHONE 16 PRO 128GB $4.900.000 (SIM FÍSICA)
+🇨🇴 IPHONE 16 PRO 256GB $5.320.000 (SIM F)
+🇨🇴 IPHONE 16 PRO MAX 256GB $5.200.000 (SIM VIRTUAL) 
+🇨🇴 IPHONE 16 PRO MAX 256GB $5.700.000 (SIM FÍSICA)
+
+
+        Ⓜ️ MOTOROLA Ⓜ️
+
+
+Ⓜ️ Motorola E14 64GB $275.000 🇨🇴 verde Negro y Lila
+Ⓜ️ Motorola G24 Power 256GB $400.000 🇨🇴 Azúl claro    
+
+
+    🏹 FLECHAS 4G 🏹
+
+
+🇨🇴 Skycell 106 4G $65.000  Negro y gris
+🇨🇴 Skycell Keystone 4G $65.000 Azúl y Negro
+🇨🇴 Skycell CAT B25 5G
+$125.000 Negro (replica de Caterpillar)
+
+                            `;
+
+
+
+        function procesarListado(listado) {
+            const celulares = [];
+            const lineas = listado.trim().split('\n');
+
+            for (const linea of lineas) {
+                // Ajustar la expresión regular para manejar correctamente los precios con puntos
+                const match = linea.match(/(.+?)\s\$(\d[\d\.]+)/);
+                if (match) {
+                    const modelo = match[1].trim();
+                    const precio = parseInt(match[2].replace(/\./g, ''), 10); // Eliminar puntos y convertir a número
+                    const precioConAumento = Math.round(precio * 1.15); // Aplicar 15% de aumento
+                    celulares.push({ modelo, precio: precioConAumento });
+                }
+            }
+
+            return celulares;
+        }
+
+        function mostrarCelulares(celulares) {
+            const lista = document.querySelector('#lista-precios');
+            lista.innerHTML = ''; // Limpiar contenido anterior
+
+            celulares.forEach(celular => {
+                const item = document.createElement('li');
+                const precioFormateado = new Intl.NumberFormat('es-CO', {
+                    style: 'currency',
+                    currency: 'COP',
+                    minimumFractionDigits: 0, // Sin decimales para COP
+                }).format(celular.precio);
+
+                item.textContent = `${celular.modelo}: ${precioFormateado}`;
+                lista.appendChild(item);
+            });
+        }
+
+        // Procesar y mostrar el listado
+        const celularesProcesados = procesarListado(listadoWhatsApp);
+        mostrarCelulares(celularesProcesados);
+
+
+    </script>
+>>>>>>> 27c30b1c844da1daa5150845cacd4afad9b07dcd
+</body>
+
+</html>
