@@ -202,57 +202,13 @@
 
 
     <!-- llena los valores de los precios en el archivo precios.txt local -->
-    <!-- <script>
-        async function cargarPreciosDesdeTXT() {
-            try {
-                // Leer el archivo precios.txt
-                const response = await fetch('./precios.txt');
-                const texto = await response.text();
-
-                // Procesar el contenido del archivo
-                const lineas = texto.split('\n');
-                const celulares = [];
-
-                lineas.forEach(linea => {
-                    const match = linea.match(/🇨🇴\s(.+?)\s\$(\d[\d\.]+)/); // Buscar modelo y precio
-                    if (match) {
-                        const modelo = match[1].trim();
-                        const precio = parseInt(match[2].replace(/\./g, ''), 10); // Convertir a número
-                        const precioConAumento = Math.round(precio * 1.15); // Aplica 15% de aumento
-                        celulares.push({ modelo, precio: precioConAumento });
-                    }
-                });
-
-                // Mostrar los celulares en la lista
-                const lista = document.querySelector('#lista-precios');
-                lista.innerHTML = ''; // Limpiar contenido anterior
-
-                celulares.forEach(celular => {
-                    const li = document.createElement('li');
-                    const precioFormateado = new Intl.NumberFormat('es-CO', {
-                        style: 'currency',
-                        currency: 'COP',
-                        minimumFractionDigits: 0 // Sin decimales
-                    }).format(celular.precio);
-
-                    li.textContent = `${celular.modelo}: ${precioFormateado}`;
-                    lista.appendChild(li);
-                });
-            } catch (error) {
-                console.error('Error al cargar los precios:', error);
-            }
-        }
-
-        // Llamar a la función para cargar los precios al iniciar
-        cargarPreciosDesdeTXT();
-    </script> -->
-
-
     <script>
         async function cargarPreciosDesdeOneDrive() {
             try {
                 // Enlace directo al archivo en OneDrive
-                const url = 'precios.txt'; // Reemplaza FILE_ID con tu ID único
+                //const url = 'precios.txt'; // Reemplaza FILE_ID con tu ID único
+                url = 'https://suamoblado.com/precioscelulares/precios.txt'; 
+
                 const response = await fetch(url);
                 const texto = await response.text();
     
