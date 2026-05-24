@@ -36,6 +36,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="alternate" hreflang="es-CO" href="https://celularesmedellin.com">
+
+    <style>
+    /* ── BANDA "SE VENDE ESTE DOMINIO" ── */
+    .sash-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+        z-index: 9999;
+        pointer-events: none;
+    }
+    .sash-venta {
+        position: absolute;
+        top: 52px;
+        left: -58px;
+        width: 230px;
+        padding: 11px 0;
+        background: linear-gradient(90deg,
+            #5c3300 0%,
+            #b8780a 18%,
+            #ffd700 35%,
+            #fff0a0 50%,
+            #ffd700 65%,
+            #b8780a 82%,
+            #5c3300 100%);
+        color: #2a1000;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 0.58rem;
+        font-weight: 900;
+        letter-spacing: 0.13em;
+        text-align: center;
+        text-transform: uppercase;
+        transform: rotate(-45deg);
+        box-shadow:
+            0 4px 22px rgba(255, 210, 0, 0.65),
+            0 1px 6px rgba(0, 0, 0, 0.55),
+            inset 0 1px 0 rgba(255,255,255,0.4);
+        pointer-events: all;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.35;
+        transition: filter 0.25s ease;
+    }
+    .sash-venta:hover { filter: brightness(1.12); }
+    .sash-venta .sash-crown { font-size: 0.75rem; margin-bottom: 1px; }
+    .sash-venta .sash-line2 { font-size: 0.5rem; letter-spacing: 0.18em; opacity: 0.85; }
+    </style>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -73,6 +126,17 @@
 </head>
 
 <body>
+
+    <!-- ── BANDA "SE VENDE ESTE DOMINIO" ── -->
+    <div class="sash-wrapper">
+        <a href="https://wa.me/573117450745?text=Hola,%20estoy%20interesado%20en%20comprar%20el%20dominio%20celularesmedellin.com"
+           target="_blank" class="sash-venta" title="Se vende este dominio">
+            <span class="sash-crown">👑</span>
+            <span>SE VENDE</span>
+            <span class="sash-line2">ESTE DOMINIO</span>
+        </a>
+    </div>
+
     <header id="inicio">
         <h1>Venta de Celulares en Medellín</h1>
         <p class="header-sub"><i class="fas fa-tag"></i> Al contado y a crédito &mdash; Samsung, iPhone, Huawei, ZTE y más &mdash; Envíos a toda Colombia</p>
@@ -115,7 +179,7 @@
 
         <div class="container">
             <h2 class="text-center mb-4">Galería de Apartamentos Amoblados en Medellín</h2>
-            <div class="row">
+            <div class="row gy-3">
                 <div class="col-md-4">
                     <div class="card">
                         <a
